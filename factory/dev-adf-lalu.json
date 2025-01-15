@@ -1,0 +1,9 @@
+{
+	"name": "dev-adf-lalu",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4a9a27b3-f6f9-4157-902b-c8a1da3b2e99",
+		"tenantId": "2405f9bb-5533-41c3-bd0f-016b826664af"
+	}
+}
