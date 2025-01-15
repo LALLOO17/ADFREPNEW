@@ -1,0 +1,65 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Time.csv",
+				"folderPath": "input",
+				"fileSystem": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "time_key",
+				"type": "String"
+			},
+			{
+				"name": "time_24hour",
+				"type": "String"
+			},
+			{
+				"name": "time_12hour",
+				"type": "String"
+			},
+			{
+				"name": "am_pm_indicator",
+				"type": "String"
+			},
+			{
+				"name": "morning_flag",
+				"type": "String"
+			},
+			{
+				"name": "lunchtime_flag",
+				"type": "String"
+			},
+			{
+				"name": "afternoon_flag",
+				"type": "String"
+			},
+			{
+				"name": "dinnertime_flag",
+				"type": "String"
+			},
+			{
+				"name": "evening_flag",
+				"type": "String"
+			},
+			{
+				"name": "late_evening_flag",
+				"type": "String"
+			}
+		]
+	}
+}
